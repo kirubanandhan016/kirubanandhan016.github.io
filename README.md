@@ -60,7 +60,7 @@ A backend application for managing products, categories, inventory, and orders.
 
 `Python` `FastAPI` `SQLAlchemy` `Alembic` `SQLite` `pytest`
 
-[View Repository](https://github.com/kirubanandhan016)
+[View Repository](https://github.com/kirubanandhan016/inventoryx-fastapi)
 
 ---
 
@@ -75,7 +75,7 @@ A database project demonstrating relational data modeling and practical SQL quer
 
 `SQL` `SQLite` `Database Design`
 
-[View Repository](https://github.com/kirubanandhan016)
+[View Repository](https://github.com/kirubanandhan016/ecommerce-sql-project)
 
 ---
 
@@ -90,7 +90,7 @@ A REST API for retrieving, filtering, and summarizing student information.
 
 `Python` `FastAPI` `REST API`
 
-[View Repository](https://github.com/kirubanandhan016)
+[View Repository](https://github.com/kirubanandhan016/Student-Management-API)
 
 ---
 
@@ -100,8 +100,6 @@ A REST API for retrieving, filtering, and summarizing student information.
 
 IFET College of Engineering, Villupuram  
 Anna University · 2022–2026
-
-**CGPA:** 7.14 / 10
 
 ---
 
