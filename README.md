@@ -1,40 +1,40 @@
-# Kirubanandhan V — Portfolio Website
+# Kirubanandhan V — Python Backend Developer Portfolio
 
-Personal portfolio for **entry-level Python Backend Developer / FastAPI Developer** opportunities.
+Personal portfolio website for entry-level **Python Backend Developer**, **Junior Python Developer**, and **FastAPI Developer** opportunities.
 
-🌐 **Live site:** https://kirubanandhan016.github.io/  
-💻 **GitHub:** https://github.com/kirubanandhan016  
-🔗 **LinkedIn:** https://www.linkedin.com/in/kirubanandhan-v-98bb83443/
+- **Live portfolio:** https://kirubanandhan016.github.io/
+- **GitHub profile:** https://github.com/kirubanandhan016
+- **LinkedIn:** https://www.linkedin.com/in/kirubanandhan-v-98bb83443/
+- **Contact:** kirubanandhan016@gmail.com
 
-## Portfolio highlights
+## Featured projects
 
-The site presents my backend development focus, technical skills, education, and selected projects.
-
-### Featured projects
-
-1. [InventoryX FastAPI](https://github.com/kirubanandhan016/inventoryx-fastapi) — inventory and order management API.
-2. [TaskFlow API](https://github.com/kirubanandhan016/taskflow-api) — user-scoped task management API.
-3. [Job Portal API](https://github.com/kirubanandhan016/job-portal-api) — job listings and application workflows with PostgreSQL.
-4. [E-commerce SQL Analytics](https://github.com/kirubanandhan016/ecommerce-sql-project) — relational schema and SQL analysis.
-5. [Student Management API](https://github.com/kirubanandhan016/Student-Management-API) — REST endpoint and query-filtering fundamentals.
+| Project | Focus | Repository |
+|---|---|---|
+| InventoryX | Inventory and order management API, authentication, database integrity, migrations, and tests | [inventoryx-fastapi](https://github.com/kirubanandhan016/inventoryx-fastapi) |
+| TaskFlow API | Task management API and user-scoped access | [taskflow-api](https://github.com/kirubanandhan016/taskflow-api) |
+| Job Portal API | Job listings, application workflows, and PostgreSQL | [job-portal-api](https://github.com/kirubanandhan016/job-portal-api) |
+| E-commerce SQL Project | Relational schema, constraints, and analytical SQL | [ecommerce-sql-project](https://github.com/kirubanandhan016/ecommerce-sql-project) |
+| Student Management API | REST endpoints, query filtering, and HTTP error handling | [Student-Management-API](https://github.com/kirubanandhan016/Student-Management-API) |
 
 ## Technology
 
-HTML · CSS · JavaScript · GitHub Pages
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend focus:** Python, FastAPI, REST APIs, Pydantic, JWT
+- **Data:** PostgreSQL, SQLite, SQLAlchemy, Alembic, SQL
+- **Quality and tools:** pytest, Git, GitHub, Swagger / OpenAPI
 
-## Local preview
+The website is a static site and does not require a build step.
 
-Clone the repository and open `index.html` in a browser. The website uses static HTML, CSS, and JavaScript; no build step is required.
+## Run locally
+
+1. Clone this repository.
+2. Open `index.html` in a browser, or use a local static-file server.
+3. Keep `index.html`, `style.css`, `script.js`, and `resume.pdf` in the repository root so the website links resolve correctly.
 
 ## Maintenance checklist
 
-- Keep repository links pointed to the correct projects.
-- Update project descriptions when features change.
-- Only publish test counts, deployment status, or technical claims after verifying them.
+- Verify every project link and resume before publishing.
+- Update project descriptions when repository features change.
+- Avoid claims about production deployment, test counts, or performance unless verified.
 - Keep contact and career information current.
-
-## Contact
-
-**Kirubanandhan V**  
-Email: kirubanandhan016@gmail.com  
-[LinkedIn](https://www.linkedin.com/in/kirubanandhan-v-98bb83443/)
