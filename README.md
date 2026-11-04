@@ -1,5 +1,7 @@
 # Kirubanandhan V — Python Backend Developer Portfolio
 
+[![InventoryX tests](https://github.com/kirubanandhan016/inventoryx-fastapi/actions/workflows/tests.yml/badge.svg)](https://github.com/kirubanandhan016/inventoryx-fastapi/actions/workflows/tests.yml) [![TaskFlow tests](https://github.com/kirubanandhan016/taskflow-api/actions/workflows/tests.yml/badge.svg)](https://github.com/kirubanandhan016/taskflow-api/actions/workflows/tests.yml) [![Job Portal tests](https://github.com/kirubanandhan016/job-portal-api/actions/workflows/tests.yml/badge.svg)](https://github.com/kirubanandhan016/job-portal-api/actions/workflows/tests.yml)
+
 Personal portfolio website for entry-level **Python Backend Developer**, **Junior Python Developer**, and **FastAPI Developer** opportunities.
 
 - **Live portfolio:** https://kirubanandhan016.github.io/
@@ -22,7 +24,8 @@ Personal portfolio website for entry-level **Python Backend Developer**, **Junio
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend focus:** Python, FastAPI, REST APIs, Pydantic, JWT
 - **Data:** PostgreSQL, SQLite, SQLAlchemy, Alembic, SQL
-- **Quality and tools:** pytest, Git, GitHub, Swagger / OpenAPI
+- **Quality and tools:** pytest, Git, GitHub Actions, Swagger / OpenAPI
+- **Verification:** automated API tests and PostgreSQL integration smoke checks are defined in the three featured repositories' workflows
 
 The website is a static site and does not require a build step.
 
