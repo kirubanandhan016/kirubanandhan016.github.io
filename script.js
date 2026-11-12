@@ -1,1 +1,32 @@
-const toggle=document.getElementById("menuToggle");const nav=document.getElementById("nav");toggle?.addEventListener("click",()=>{const open=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",String(open));toggle.setAttribute("aria-label",open?"Close navigation":"Open navigation");toggle.textContent=open?"×":"☰"});nav?.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");toggle?.setAttribute("aria-expanded","false");if(toggle){toggle.textContent="☰";toggle.setAttribute("aria-label","Open navigation")}}));document.getElementById("year").textContent=new Date().getFullYear();if("IntersectionObserver"in window){const reveal=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");reveal.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll(".skill-group,.project-card,.timeline-card,.cert-list>div").forEach(el=>{el.classList.add("reveal");reveal.observe(el)})}
+const menuToggle=document.getElementById("menuToggle");
+const nav=document.getElementById("nav");
+menuToggle?.addEventListener("click",()=>{
+  const isOpen=nav.classList.toggle("open");
+  menuToggle.setAttribute("aria-expanded",String(isOpen));
+  menuToggle.setAttribute("aria-label",isOpen?"Close navigation":"Open navigation");
+});
+nav?.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{
+  nav.classList.remove("open");
+  menuToggle?.setAttribute("aria-expanded","false");
+  menuToggle?.setAttribute("aria-label","Open navigation");
+}));
+const year=document.getElementById("year");
+if(year) year.textContent=String(new Date().getFullYear());
+if("IntersectionObserver" in window){
+  const revealObserver=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){entry.target.classList.add("visible");revealObserver.unobserve(entry.target);}
+    });
+  },{threshold:.12});
+  document.querySelectorAll(".skill-card,.project-card,.leadpilot-card,.experience-card,.education-card,.cert-card").forEach(el=>{
+    el.classList.add("reveal");revealObserver.observe(el);
+  });
+  const navObserver=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        nav?.querySelectorAll("a[href^='#']").forEach(link=>link.classList.toggle("active",link.getAttribute("href")==="#"+entry.target.id));
+      }
+    });
+  },{rootMargin:"-35% 0px -55% 0px"});
+  document.querySelectorAll("main section[id]").forEach(section=>navObserver.observe(section));
+}
