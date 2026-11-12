@@ -207,3 +207,48 @@ h2 { margin-bottom: 0; font: 700 clamp(32px,4vw,48px)/1.16 var(--display); lette
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* Dark developer-portfolio theme and portrait hero */
+:root{--bg:#070b16;--surface:#0e1526;--surface-soft:#131d33;--ink:#f4f6ff;--ink-soft:#b5bfd2;--muted:#8491aa;--line:#26324a;--blue:#8876ff;--blue-dark:#7461f4;--mint:#53d6ae;--shadow:0 20px 60px rgba(0,0,0,.28)}
+body{background:var(--bg);color:var(--ink)}
+.site-header{background:rgba(7,11,22,.9);border-color:#202a40}
+.brand-mark{color:#a89bff;border-color:#393264;background:#171a37}.brand-dot{color:#a89bff}
+.nav{color:#b4bfd4}.nav-cta{color:#d8d2ff;background:#171b34;border-color:#413a75}
+.availability{color:#a8e6d1;background:#0d211f;border-color:#24463f}
+.hero-accent,.hero .eyebrow,.section-kicker,.project-kicker,.project-label{color:#a89bff}
+.hero-meta,.social-row{color:#a0acc2}.social-row a:hover,.contact-details a:hover{color:#b2a7ff}
+.hero-visual{min-height:510px;align-items:center}
+.portrait-backdrop{position:absolute;width:390px;height:390px;right:20px;top:45px;border-radius:50%;background:linear-gradient(145deg,#5335db,#9b6bff);box-shadow:0 0 80px rgba(119,86,255,.25)}
+.profile-photo{position:relative;z-index:1;display:block;width:min(88%,390px);height:470px;object-fit:cover;object-position:center 28%;border-radius:180px 180px 22px 22px;filter:saturate(.92);box-shadow:0 25px 60px rgba(0,0,0,.38);border:1px solid rgba(255,255,255,.14)}
+.portrait-code{position:absolute;z-index:3;right:-5px;top:175px;padding:13px 15px;border:1px solid #35415e;border-radius:11px;background:rgba(12,19,35,.96);box-shadow:0 16px 35px rgba(0,0,0,.3);font:9px/1.9 var(--mono);color:#b9c5dc}
+.portrait-code-head{display:flex;justify-content:space-between;gap:30px;padding-bottom:7px;margin-bottom:7px;border-bottom:1px solid #28344e;color:#9ba9c3}
+.portrait-code-head i{width:6px;height:6px;margin-top:5px;border-radius:50%;background:#55d6a7}
+.portrait-code code b{color:#b3a5ff}.portrait-code code span{color:#72dcb5}
+.portrait-caption{position:absolute;z-index:3;left:5px;bottom:15px;padding:10px 13px;border:1px solid #35415e;border-radius:8px;background:#101a2c;color:#d6def0;font:8px var(--mono);letter-spacing:.8px}
+.float-note{background:#111a2c;border-color:#34415c;color:#f4f6ff}.float-icon,.skill-symbol,.project-card-icon,.education-icon{background:#211f46;color:#b5a8ff}
+.visual-orbit{border-color:#27324b}
+.section-kicker span{background:#10182b;border-color:#35415a;color:#b5a8ff}
+.about-content,.project-card>p:not(.project-kicker),.experience-content ul,.experience-company,.current-project-copy>p:not(.project-kicker){color:#b5bfd2}
+.about-stats{border-color:var(--line)}.about-stats strong{color:#a89bff}
+.skill-card,.project-card,.current-project,.experience-card,.education-card,.certifications-card{background:var(--surface);border-color:var(--line)}
+.skill-card:hover,.project-card:hover{border-color:#5b5296}
+.skill-card h3,.project-card h3,.experience-content h3,.education-main h3,.certifications-card h3,.current-project-copy h3{color:#f3f5ff}
+.skill-card p,.education-main p:not(.project-kicker),.education-main>span{color:#97a4bc}
+.tag-list span{background:#151f33;border-color:#2b3852;color:#c0cbe0}
+.current-project-top,.leadpilot-panel-head,.leadpilot-panel-foot{background:#121c30;border-color:#2c3852;color:#aab7ce}
+.status-pill{background:#112a29;color:#76dfbd}
+.current-project-visual{background:radial-gradient(circle at 20% 20%,#302765,#111c31 70%)}
+.leadpilot-panel{background:#101a2d;border-color:#384360}
+.leadpilot-panel-body>strong,.leadpilot-db b{color:#f2f4ff}
+.leadpilot-db{border-color:#303d58}.leadpilot-db small{color:#94a2bd}
+.progress-track{background:#27334b}
+.no-link-note,.project-card-foot{color:#8e9bb3}.project-card-foot{border-color:#293650}.project-card-foot a{color:#aaa0ff}
+.experience-date,.experience-type{color:#98a5bd}.experience-type{border-color:#35415b}
+.cgpa{border-color:#34415a}.cgpa span{color:#9ca9bf}
+.certifications-card li small{color:#97a4bc}
+.contact-section{background:#101a2e;border-top:1px solid #293550}
+.contact-inner .section-kicker span{background:#1a2540;border-color:#3b4968}
+.contact-copy{color:#bac5d9}.contact-details{color:#c5cee0}
+.site-footer{color:#8e9bb3}.site-footer .brand{color:#f4f6ff}
+@media(max-width:760px){.nav{background:#0b1221;border-color:#26324a}.hero-visual{min-height:440px}.profile-photo{height:410px;width:min(86%,350px)}.portrait-backdrop{width:320px;height:320px;right:4px;top:48px}.portrait-code{right:-4px;top:155px}}
+@media(max-width:540px){.hero-visual{min-height:390px}.profile-photo{height:355px;width:82%}.portrait-backdrop{width:280px;height:280px;right:0;top:35px}.portrait-code{right:-4px;top:140px;padding:9px 10px;font-size:8px}.portrait-caption{left:0;bottom:0;font-size:7px}}
