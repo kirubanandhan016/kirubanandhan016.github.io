@@ -252,3 +252,78 @@ body{background:var(--bg);color:var(--ink)}
 .site-footer{color:#8e9bb3}.site-footer .brand{color:#f4f6ff}
 @media(max-width:760px){.nav{background:#0b1221;border-color:#26324a}.hero-visual{min-height:440px}.profile-photo{height:410px;width:min(86%,350px)}.portrait-backdrop{width:320px;height:320px;right:4px;top:48px}.portrait-code{right:-4px;top:155px}}
 @media(max-width:540px){.hero-visual{min-height:390px}.profile-photo{height:355px;width:82%}.portrait-backdrop{width:280px;height:280px;right:0;top:35px}.portrait-code{right:-4px;top:140px;padding:9px 10px;font-size:8px}.portrait-caption{left:0;bottom:0;font-size:7px}}
+
+
+/* Reference-inspired CodeCraft layout: dark navy, purple accents, portrait right */
+:root{--bg:#050916;--surface:#0d1527;--surface-soft:#111c31;--ink:#f4f6ff;--ink-soft:#b8c2d5;--muted:#8996ad;--line:#26334d;--blue:#8c78ff;--blue-dark:#7058ef;--mint:#58d5aa;--shadow:0 20px 55px rgba(0,0,0,.3)}
+body{background:#050916;color:#f4f6ff}
+.site-header{background:rgba(5,9,22,.94);border-color:#1c2740}
+.header-inner{height:66px}
+.brand-mark{color:#aa9aff;background:#171936;border-color:#383267;border-radius:6px}
+.brand-dot{color:#aa9aff}
+.nav{gap:27px;color:#c4cadd;font-size:11px;font-weight:500}
+.nav a:hover,.nav .nav-home{color:#b5a6ff}
+.nav .nav-home{position:relative}
+.nav .nav-home:after{content:"";position:absolute;left:0;right:0;bottom:-24px;height:2px;background:#907cff}
+.nav-cta{background:linear-gradient(110deg,#6955e9,#946dff);border:0;color:#fff!important;border-radius:5px;padding:9px 18px}
+.hero{min-height:500px;padding-top:48px;padding-bottom:55px;grid-template-columns:1fr 1fr;gap:25px}
+.availability{background:#0d211f;border-color:#24463f;color:#a5e7d1;padding:6px 10px;font-size:8px}
+.eyebrow,.section-kicker,.project-kicker,.project-label,.project-index,.skill-index{color:#a99aff}
+.hero .eyebrow{margin:18px 0 10px}
+.hero h1{font:700 clamp(38px,4.3vw,55px)/1.08 var(--display);letter-spacing:-2.1px;margin:10px 0 14px}
+.hero-accent{color:#9883ff}
+.hero-description{max-width:470px;color:#b7c1d4;font-size:12px;line-height:1.8}
+.button-primary{background:linear-gradient(110deg,#6955e9,#946dff);box-shadow:0 8px 22px rgba(108,82,237,.22);border-radius:5px}
+.button-secondary{border:1px solid #69758e;color:#f3f5fc;background:transparent;border-radius:5px}
+.hero-meta,.social-row{color:#a3aec3;font-size:10px}
+.hero-visual{min-height:425px;position:relative;display:flex;align-items:center;justify-content:center;overflow:visible}
+.portrait-backdrop{position:absolute;width:340px;height:340px;top:35px;right:35px;left:auto;border-radius:50%;background:linear-gradient(145deg,#4c2dc6,#9d6bff);box-shadow:0 0 85px rgba(119,86,255,.28)}
+.profile-photo{position:relative;z-index:2;display:block;width:370px;height:430px;max-width:90%;object-fit:cover;object-position:50% 19%;border-radius:180px 180px 8px 8px;border:0;box-shadow:none;filter:none;image-rendering:auto}
+.portrait-code{z-index:4;right:-3px;top:135px;width:175px;padding:11px 13px;background:#0b1222;border:1px solid #33415e;border-radius:8px;color:#c0c9dc;font:8px/1.85 var(--mono);box-shadow:0 15px 30px #0007}
+.portrait-code-head{border-color:#283550;color:#aab6cd}
+.portrait-code-head i{background:#58d5aa}
+.portrait-code code b{color:#b5a4ff}.portrait-code code span{color:#7de0b9}
+.portrait-caption{left:3px;bottom:8px;background:#101a2d;border:1px solid #35415b;color:#d6def0;border-radius:5px;padding:8px 10px;font-size:7px}
+.dot-pattern{position:absolute;z-index:0;right:5px;top:25px;width:65px;height:85px;opacity:.55;background-image:radial-gradient(#8878ff 1px,transparent 1px);background-size:8px 8px}
+.hero-scroll{bottom:5px;color:#8794ad}
+.section-block{padding-top:78px}
+.section-kicker{margin-bottom:24px}
+.section-kicker span{background:#111a2d;border-color:#35415d;color:#b4a5ff}
+.about-layout{gap:55px}
+.about-content{color:#b4bfd2}
+.large-copy{color:#f3f5ff}
+.about-stats{border-color:#26334d}
+.about-stats strong{color:#a895ff}
+.skills-grid{grid-template-columns:repeat(3,1fr);gap:14px}
+.skill-card,.project-card,.current-project,.experience-card,.education-card,.certifications-card{background:#0d1527;border-color:#26334d;border-radius:9px}
+.skill-card{min-height:205px;padding:20px}
+.skill-card:hover,.project-card:hover{border-color:#6655b5;box-shadow:0 15px 35px #0005}
+.skill-symbol,.project-card-icon,.education-icon{background:#211f46;color:#b5a8ff}
+.skill-card h3,.project-card h3,.experience-content h3,.education-main h3,.certifications-card h3,.current-project-copy h3{color:#f4f6ff}
+.skill-card p,.project-card>p:not(.project-kicker),.education-main p:not(.project-kicker),.education-main>span{color:#98a6bd}
+.tag-list span{background:#151f33;border-color:#2c3953;color:#c2cde0}
+.current-project{background:#0d1527;border-color:#303b59}
+.current-project-top,.leadpilot-panel-head,.leadpilot-panel-foot{background:#111c30;border-color:#2c3953;color:#aab7ce}
+.status-pill{background:#112b29;color:#7ce0bd}
+.current-project-content{grid-template-columns:1.05fr .95fr;padding:28px}
+.current-project-visual{background:radial-gradient(circle at 20% 20%,#302765,#111c31 70%)}
+.leadpilot-panel{background:#101a2d;border-color:#384360}
+.leadpilot-panel-body>strong,.leadpilot-db b{color:#f2f4ff}
+.leadpilot-db{border-color:#303d58}.leadpilot-db small{color:#94a2bd}
+.progress-track{background:#27334b}
+.leadpilot-note{display:flex;align-items:center;gap:15px;padding:18px 21px;margin-top:14px;border:1px solid #283550;border-radius:8px;background:#0d1527}
+.leadpilot-note-icon{display:grid;place-items:center;width:38px;height:38px;flex:0 0 38px;border-radius:8px;background:#282151;color:#b8aaff;font:700 12px var(--display)}
+.leadpilot-note strong{font:600 12px var(--display);color:#f3f5ff}
+.leadpilot-note p{margin:3px 0 0;color:#94a2ba;font-size:10px}
+.experience-card,.education-card,.certifications-card{color:#f4f6ff}
+.experience-date,.experience-type{color:#98a5bd}.experience-type{border-color:#35415b}
+.experience-company,.experience-content ul{color:#b5bfd2}
+.cgpa{border-color:#34415a}.cgpa span{color:#9ca9bf}
+.certifications-card li small{color:#97a4bc}
+.contact-section{background:#101a2e;border-top:1px solid #293550}
+.contact-inner .section-kicker span{background:#1a2540;border-color:#3b4968}
+.contact-copy,.contact-details{color:#c5cee0}
+.site-footer{color:#8e9bb3}.site-footer .brand{color:#f4f6ff}
+@media(max-width:980px){.hero{grid-template-columns:1fr 1fr;gap:15px}.portrait-backdrop{right:10px;width:310px;height:310px}.profile-photo{width:340px;height:410px}.portrait-code{right:-8px}}
+@media(max-width:760px){.nav{background:#0b1221;border-color:#26324a}.nav .nav-home:after{display:none}.hero{grid-template-columns:1fr;padding-top:48px;gap:18px}.hero-visual{min-height:420px;margin-top:4px}.portrait-backdrop{width:320px;height:320px;right:50%;transform:translateX(50%);top:35px}.profile-photo{height:405px;width:350px;max-width:85%;object-position:50% 19%}.portrait-code{right:0;top:125px}.portrait-caption{left:2px;bottom:4px}}
+@media(max-width:540px){.hero{padding-top:38px}.hero-visual{min-height:365px}.portrait-backdrop{width:280px;height:280px;top:26px}.profile-photo{height:350px;width:300px;max-width:84%;object-position:50% 19%}.portrait-code{right:-4px;top:115px;width:150px;padding:9px 10px;font-size:7px}.portrait-caption{left:0;bottom:0;font-size:7px}.skills-grid{grid-template-columns:1fr}.current-project-content{grid-template-columns:1fr}.leadpilot-note{align-items:flex-start}}
