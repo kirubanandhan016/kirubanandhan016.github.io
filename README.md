@@ -9,7 +9,15 @@ Personal portfolio website for entry-level **Python Backend Developer**, **Junio
 - **LinkedIn:** https://www.linkedin.com/in/kirubanandhan-v-98bb83443/
 - **Contact:** kirubanandhan016@gmail.com
 
-## Featured projects
+## Current project
+
+### LeadPilot — In development
+
+LeadPilot is my current backend project. The PostgreSQL database environment has been set up with the database name `leadpilot_db`, and application development is in progress.
+
+The project will be documented here as its implementation details are finalized. No repository link is listed yet.
+
+## Previous project work
 
 | Project | Focus | Repository |
 |---|---|---|
