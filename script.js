@@ -30,3 +30,13 @@ if("IntersectionObserver" in window){
   },{rootMargin:"-35% 0px -55% 0px"});
   document.querySelectorAll("main section[id]").forEach(section=>navObserver.observe(section));
 }
+
+
+const contactForm=document.getElementById("contactForm");
+contactForm?.addEventListener("submit",event=>{
+  event.preventDefault();
+  const data=new FormData(contactForm);
+  const subject=encodeURIComponent(String(data.get("subject")||"Portfolio enquiry"));
+  const body=encodeURIComponent("Name: "+data.get("name")+"\nEmail: "+data.get("email")+"\n\n"+data.get("message"));
+  window.location.href="mailto:kirubanandhan016@gmail.com?subject="+subject+"&body="+body;
+});
