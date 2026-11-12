@@ -11,32 +11,39 @@ Personal portfolio for entry-level **Python Backend Developer**, **Junior Python
 
 | Project | Verified focus | Repository |
 |---|---|---|
-| InventoryX API | Product/category CRUD, inventory adjustment, order placement/cancellation, JWT, SQLAlchemy, Alembic, Pytest and CI | [inventoryx-fastapi](https://github.com/kirubanandhan016/inventoryx-fastapi) |
-| Job Portal API | Job search/filtering, employer and job-seeker roles, JWT, applications, resource ownership and PostgreSQL | [job-portal-api](https://github.com/kirubanandhan016/job-portal-api) |
+| InventoryX API | Product/category CRUD, inventory adjustments/history, order placement and cancellation, JWT, SQLAlchemy, Alembic, Pytest and CI | [inventoryx-fastapi](https://github.com/kirubanandhan016/inventoryx-fastapi) |
+| Job Portal API | Job search/filtering, employer/job-seeker roles, JWT, applications, resource ownership, PostgreSQL and Pytest | [job-portal-api](https://github.com/kirubanandhan016/job-portal-api) |
 | TaskFlow API | Task CRUD, JWT authentication, user-scoped access, SQLAlchemy, Pydantic and Pytest | [taskflow-api](https://github.com/kirubanandhan016/taskflow-api) |
 | Student Management API | Student retrieval, department/marks filtering, summary endpoints, validation and Pytest; in-memory data only | [Student-Management-API](https://github.com/kirubanandhan016/Student-Management-API) |
 
-**Current work:** LeadPilot is in development. The PostgreSQL database environment `leadpilot_db` has been created; this portfolio does not claim a public repository or completed feature set for it.
+**Current work — LeadPilot:** LeadPilot is in development. The PostgreSQL database environment `leadpilot_db` has been created. No public repository or completed feature list is linked until those details are published.
 
-## Resume-backed technology
+## Technology
 
 - **Programming:** Python, SQL, C, C++, OOP, exception handling
-- **Backend & API:** FastAPI, RESTful APIs, CRUD operations, Pydantic, HTTP methods and status codes
-- **Databases & ORM:** PostgreSQL, SQLite, SQLAlchemy 2.0, Alembic, database transactions
-- **Security:** JWT, password hashing, role-based access control, authorization and data validation
+- **Backend & API:** FastAPI, REST APIs, CRUD, Pydantic, HTTP methods and status codes
+- **Database:** PostgreSQL, SQLite, SQLAlchemy 2.0, Alembic, database transactions
+- **Authentication & security:** JWT, password hashing, role-based access control, authorization and data validation
 - **Testing & tools:** Pytest, API testing, Git, GitHub, Linux, VS Code and GitHub Actions
 
 ## Design system
 
 - **Headings:** Manrope
 - **Body:** Inter
-- **Technical labels/code:** JetBrains Mono
+- **Technical labels:** JetBrains Mono
 - **Background:** `#090B12`
 - **Cards:** `#171C28`
-- **Accent blue:** `#2563EB`
-- **Cyan accent:** `#22D3EE`
+- **Primary accent:** `#B7FF36`
+- **Secondary accent:** `#22D3EE`
+- **Borders:** `#303642`
 
-The site is responsive static HTML, CSS and JavaScript. No build step or backend contact-form service is required.
+The portfolio uses responsive HTML, CSS and vanilla JavaScript. It is designed for GitHub Pages and requires no build step.
+
+## Contact form setup
+
+The contact form posts to [FormSubmit](https://formsubmit.co/), which forwards submissions to the portfolio email address. On the first real submission, FormSubmit sends an activation email to the recipient. Open that email and confirm the form once before relying on delivery. Do not disable its CAPTCHA protection.
+
+The form is a hosted third-party integration; there is no custom API server in this static GitHub Pages repository.
 
 ## Repository structure
 
@@ -46,17 +53,34 @@ style.css
 script.js
 assets/
   kiruba-portrait.webp
+  profile.jpg
 resume.pdf
+README.md
 ```
 
 ## Run locally
 
-Open `index.html` in a browser or serve the folder with a local static-file server. Keep the referenced image and resume paths intact.
+Serve the repository root with a local static web server, for example:
+
+```bash
+python -m http.server 8000
+```
+
+Then open http://localhost:8000. The hosted contact form requires a web server and an activated FormSubmit endpoint; opening the HTML file directly is not a valid contact-form test.
+
+## GitHub Pages deployment
+
+1. Open the repository **Settings → Pages**.
+2. Set the source to **Deploy from a branch**.
+3. Select the `main` branch and `/ (root)` folder, then save.
+4. Keep `index.html`, `style.css`, `script.js`, `resume.pdf`, and the `assets/` directory in the repository root.
+5. Visit https://kirubanandhan016.github.io/ after GitHub Pages finishes publishing.
 
 ## Accuracy notes
 
-- Project descriptions are based on the corresponding repository README files.
-- Student Management API uses in-memory sample data; it is not presented as a database-backed application.
-- LeadPilot is marked as in development without a guessed repository URL or feature list.
-- No live demos, production deployment claims, test counts, performance metrics or fake proficiency ratings are advertised.
-- Keep `resume.pdf` synchronized with the latest resume before sharing the portfolio.
+- Project descriptions are based on the README files in the linked repositories.
+- Student Management API uses in-memory sample data; it is not described as a database-backed application.
+- Job Portal API does not claim Alembic migrations; its README says schema migrations remain future work.
+- LeadPilot is marked as in development without an invented public repository URL or feature list.
+- No live-demo, production-deployment, test-count, performance, or fake proficiency claims are advertised.
+- Keep `resume.pdf` and the education/experience details synchronized with the latest resume.
