@@ -1,0 +1,48 @@
+name: Assemble original portfolio portrait
+
+on:
+  push:
+    paths:
+      - ".github/portrait-parts/**"
+      - ".github/workflows/assemble-portrait.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out portfolio
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Rebuild and validate the portrait
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .github/portrait-parts/part*.txt | tr -d '\n' | base64 --decode > assets/kiruba-portrait.webp
+          test "$(stat -c%s assets/kiruba-portrait.webp)" -gt 20000
+          file assets/kiruba-portrait.webp | grep -qi 'Web/P image'
+          python - <<'PY'
+          from PIL import Image
+          image = Image.open("assets/kiruba-portrait.webp")
+          image.verify()
+          image = Image.open("assets/kiruba-portrait.webp")
+          assert image.size == (600, 631), image.size
+          print("Verified WebP portrait:", image.size)
+          PY
+
+      - name: Remove temporary portrait chunks and commit binary asset
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf .github/portrait-parts
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/kiruba-portrait.webp
+          git add -A .github/portrait-parts
+          git commit -m "Replace portfolio portrait with verified high-quality WebP"
+          git push
