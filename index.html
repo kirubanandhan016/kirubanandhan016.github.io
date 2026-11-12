@@ -3,151 +3,270 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kirubanandhan V — Python Backend Developer building REST APIs, database-backed applications, and reliable backend services." />
+  <meta name="theme-color" content="#f6f7fb" />
+  <meta name="description" content="Kirubanandhan V — entry-level Python Backend Developer focused on Python, FastAPI, REST APIs, PostgreSQL, SQLAlchemy, JWT authentication and automated testing." />
+  <meta property="og:title" content="Kirubanandhan V | Python Backend Developer" />
+  <meta property="og:description" content="Backend development with Python, FastAPI, PostgreSQL and practical API projects." />
   <title>Kirubanandhan V | Python Backend Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="grid-overlay" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="Kirubanandhan home"><span class="brand-mark">&lt;/&gt;</span><span>kiruba<span class="muted">.dev</span></span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <nav class="nav" id="nav">
-      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a>
-      <a class="nav-cta" href="#contact">Let's connect <span>↗</span></a>
-    </nav>
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Kirubanandhan home">
+        <span class="brand-mark">&lt;/&gt;</span><span>kiruba<span class="brand-dot">.dev</span></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#background">Background</a>
+        <a class="nav-cta" href="#contact">Contact <span>↗</span></a>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero section-wrap" id="home">
       <div class="hero-copy">
-        <div class="availability"><span class="pulse"></span> OPEN TO ENTRY-LEVEL OPPORTUNITIES</div>
-        <p class="eyebrow">PYTHON BACKEND DEVELOPER <span class="slash">/</span> FRESHER</p>
-        <h1>Building the logic<br>behind the <span class="gradient-text">experience.</span></h1>
-        <p class="hero-description">I'm <strong>Kirubanandhan V</strong> — an aspiring backend developer focused on building REST APIs, database-driven applications, and dependable server-side systems with Python.</p>
+        <div class="availability"><span class="availability-dot"></span> OPEN TO ENTRY-LEVEL OPPORTUNITIES</div>
+        <p class="eyebrow">PYTHON BACKEND DEVELOPER <span>/</span> ENTRY LEVEL</p>
+        <h1>Building reliable APIs.<br /><span class="hero-accent">Solving backend problems.</span></h1>
+        <p class="hero-description">I'm <strong>Kirubanandhan V</strong>, a Python Backend Developer focused on building RESTful APIs and database-backed applications with FastAPI, PostgreSQL and SQLAlchemy. I care about clear API design, secure access, data integrity and automated tests.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#projects">Explore my work <span>↘</span></a>
+          <a class="button button-primary" href="#projects">Explore projects <span>↘</span></a>
           <a class="button button-secondary" href="resume.pdf" target="_blank" rel="noreferrer">View resume <span>↗</span></a>
+        </div>
+        <div class="hero-meta">
+          <span><i class="meta-dot"></i> Tamil Nadu, India</span>
+          <span>Python · FastAPI · PostgreSQL</span>
         </div>
         <div class="social-row">
           <a href="https://github.com/kirubanandhan016" target="_blank" rel="noreferrer">GitHub ↗</a>
-          <span class="social-divider">/</span>
           <a href="https://www.linkedin.com/in/kirubanandhan-v-98bb83443/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          <span class="social-divider">/</span>
           <a href="mailto:kirubanandhan016@gmail.com">Email ↗</a>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="terminal-window">
-          <div class="terminal-top"><div class="window-dots"><i></i><i></i><i></i></div><span>kiruba.py</span><span class="terminal-status">● running</span></div>
-          <div class="terminal-body">
-            <div class="code-line"><span class="line-no">01</span><span><b class="purple">class</b> <b class="green">BackendDeveloper</b>:</span></div>
-            <div class="code-line"><span class="line-no">02</span><span class="indent"><b class="purple">def</b> <b class="yellow">__init__</b>(self):</span></div>
-            <div class="code-line"><span class="line-no">03</span><span class="indent2">self.name = <b class="orange">"Kirubanandhan"</b></span></div>
-            <div class="code-line"><span class="line-no">04</span><span class="indent2">self.role = <b class="orange">"Backend Developer"</b></span></div>
-            <div class="code-line"><span class="line-no">05</span><span class="indent2">self.stack = [</span></div>
-            <div class="code-line"><span class="line-no">06</span><span class="indent3"><b class="orange">"Python"</b>, <b class="orange">"FastAPI"</b>,</span></div>
-            <div class="code-line"><span class="line-no">07</span><span class="indent3"><b class="orange">"SQL"</b>, <b class="orange">"SQLAlchemy"</b></span></div>
-            <div class="code-line"><span class="line-no">08</span><span class="indent2">]</span></div>
-            <div class="code-line"><span class="line-no">09</span><span class="indent"><b class="purple">def</b> <b class="yellow">build</b>(self):</span></div>
-            <div class="code-line"><span class="line-no">10</span><span class="indent2"><b class="purple">return</b> <b class="green">"Useful, tested APIs"</b><span class="cursor">▍</span></span></div>
+
+      <div class="hero-visual" aria-label="Python backend code illustration">
+        <div class="code-card">
+          <div class="code-card-top">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span>backend.py</span>
+            <span class="code-live">● READY</span>
           </div>
-          <div class="terminal-bottom"><span><span class="green-dot"></span> Python 3.x</span><span>UTF-8</span><span>Ln 10, Col 42</span></div>
+          <div class="code-content">
+            <div class="code-line"><span class="line-no">01</span><span><b class="syntax-purple">class</b> <b class="syntax-blue">BackendDeveloper</b>:</span></div>
+            <div class="code-line"><span class="line-no">02</span><span class="indent"><b class="syntax-purple">def</b> <b class="syntax-yellow">build</b>(self):</span></div>
+            <div class="code-line"><span class="line-no">03</span><span class="indent2">stack = [</span></div>
+            <div class="code-line"><span class="line-no">04</span><span class="indent3"><b class="syntax-green">"Python"</b>, <b class="syntax-green">"FastAPI"</b>,</span></div>
+            <div class="code-line"><span class="line-no">05</span><span class="indent3"><b class="syntax-green">"PostgreSQL"</b>, <b class="syntax-green">"SQLAlchemy"</b>,</span></div>
+            <div class="code-line"><span class="line-no">06</span><span class="indent3"><b class="syntax-green">"Pytest"</b>, <b class="syntax-green">"Alembic"</b></span></div>
+            <div class="code-line"><span class="line-no">07</span><span class="indent2">]</span></div>
+            <div class="code-line"><span class="line-no">08</span><span class="indent"><b class="syntax-purple">return</b> <b class="syntax-blue">"Useful, tested APIs"</b></span></div>
+            <div class="code-line"><span class="line-no">09</span><span class="indent"><span class="syntax-comment"># Learn. Build. Improve.</span></span></div>
+          </div>
+          <div class="code-card-bottom"><span><i class="status-dot"></i> Python 3</span><span>REST / SQL</span><span>UTF-8</span></div>
         </div>
-        <div class="floating-chip chip-api"><span class="chip-icon">↔</span><span><b>REST APIs</b><small>Design · Build · Test</small></span></div>
-        <div class="floating-chip chip-db"><span class="chip-icon">▤</span><span><b>SQL & Databases</b><small>Model · Query · Optimize</small></span></div>
-        <div class="hero-orb"></div>
+        <div class="float-note note-api"><span class="float-icon">↔</span><span><b>REST APIs</b><small>Design · Build · Test</small></span></div>
+        <div class="float-note note-data"><span class="float-icon">▤</span><span><b>Relational data</b><small>Model · Query · Migrate</small></span></div>
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
       </div>
-      <div class="hero-bottom"><span>01 — INTRODUCTION</span><span>SCROLL TO EXPLORE <span class="scroll-arrow">↓</span></span></div>
+      <div class="hero-scroll"><span>01 / INTRODUCTION</span><a href="#about">SCROLL TO EXPLORE ↓</a></div>
     </section>
 
     <section class="section-wrap section-block" id="about">
-      <div class="section-label"><span>01</span> ABOUT ME</div>
+      <div class="section-kicker"><span>01</span> ABOUT</div>
       <div class="about-layout">
-        <div><h2>Curious by nature.<br><span class="muted-heading">Backend by choice.</span></h2></div>
+        <div><h2>Backend work with<br /><span class="muted-heading">clarity and purpose.</span></h2></div>
         <div class="about-content">
-          <p class="large-copy">I enjoy turning requirements into practical backend features: clear API endpoints, sensible data models, and predictable error handling.</p>
-          <p>My project work has given me hands-on practice with FastAPI, SQLAlchemy, database migrations, authentication, SQL queries, and automated tests. I'm looking for an entry-level opportunity where I can keep learning, contribute to a team, and build software that solves real problems.</p>
-          <div class="about-facts">
-            <div><span class="fact-number">05</span><span class="fact-label">Featured backend / SQL projects</span></div>
-            <div><span class="fact-number">REST</span><span class="fact-label">API design and implementation</span></div>
-            <div><span class="fact-number">pytest</span><span class="fact-label">Automated API testing</span></div>
+          <p class="large-copy">I turn requirements into practical backend features: structured endpoints, validated requests, secure authentication and reliable database operations.</p>
+          <p>My hands-on project work covers CRUD workflows, SQLAlchemy ORM, Alembic migrations, JWT authentication, role and resource-level authorization, database transactions and Pytest API tests. I am looking for an entry-level Python backend role where I can contribute to real products and continue developing strong engineering practices.</p>
+          <div class="about-stats">
+            <div><strong>03</strong><span>Featured FastAPI projects</span></div>
+            <div><strong>REST</strong><span>API design and workflows</span></div>
+            <div><strong>SQL</strong><span>Relational database work</span></div>
           </div>
-          <p class="fine-print">Project details are linked to their source repositories. Features and implementation status are described in each project README.</p>
         </div>
       </div>
     </section>
 
     <section class="section-wrap section-block" id="skills">
-      <div class="section-label"><span>02</span> TECH STACK</div>
-      <div class="section-heading-row"><h2>Tools I use to<br><span class="muted-heading">build the backend.</span></h2><p>Focused on the core skills needed to build and maintain Python web services.</p></div>
-      <div class="skills-grid">
-        <article class="skill-card"><div class="skill-card-head"><span class="skill-symbol">Py</span><span class="skill-index">01 / LANGUAGE</span></div><h3>Programming</h3><div class="tag-list"><span>Python</span><span>SQL</span><span>C</span><span>OOP</span></div></article>
-        <article class="skill-card"><div class="skill-card-head"><span class="skill-symbol">API</span><span class="skill-index">02 / BACKEND</span></div><h3>API Development</h3><div class="tag-list"><span>FastAPI</span><span>REST APIs</span><span>Pydantic</span><span>JWT</span><span>HTTP status codes</span></div></article>
-        <article class="skill-card"><div class="skill-card-head"><span class="skill-symbol">DB</span><span class="skill-index">03 / DATA</span></div><h3>Databases</h3><div class="tag-list"><span>PostgreSQL</span><span>SQLite</span><span>SQLAlchemy 2.0</span><span>Alembic</span><span>Joins</span><span>Indexes</span><span>Transactions</span></div></article>
-        <article class="skill-card"><div class="skill-card-head"><span class="skill-symbol">✓</span><span class="skill-index">04 / QUALITY</span></div><h3>Tools & Testing</h3><div class="tag-list"><span>pytest</span><span>Git</span><span>GitHub</span><span>Swagger / OpenAPI</span><span>VS Code</span></div></article>
+      <div class="section-kicker"><span>02</span> TECHNICAL SKILLS</div>
+      <div class="section-heading-row">
+        <h2>The tools behind<br /><span class="muted-heading">the implementation.</span></h2>
+        <p>A focused backend stack, organized around the work I have built and the skills listed on my resume.</p>
       </div>
-      <p class="fine-print skills-note">Skills shown reflect tools and concepts used in my projects or listed in my resume. Project links provide implementation details and setup instructions.</p>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <div class="skill-card-head"><span class="skill-symbol">Py</span><span class="skill-index">01 / LANGUAGE</span></div>
+          <h3>Programming</h3>
+          <p>Core programming and backend logic.</p>
+          <div class="tag-list"><span>Python</span><span>SQL</span><span>C</span><span>C++</span><span>OOP</span><span>Exception handling</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-card-head"><span class="skill-symbol">API</span><span class="skill-index">02 / APPLICATION</span></div>
+          <h3>Backend & API</h3>
+          <p>Building and validating HTTP interfaces.</p>
+          <div class="tag-list"><span>FastAPI</span><span>RESTful APIs</span><span>CRUD</span><span>Pydantic</span><span>HTTP methods</span><span>Status codes</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-card-head"><span class="skill-symbol">DB</span><span class="skill-index">03 / DATA</span></div>
+          <h3>Databases & ORM</h3>
+          <p>Relational data access and schema changes.</p>
+          <div class="tag-list"><span>PostgreSQL</span><span>SQLite</span><span>SQLAlchemy 2.0</span><span>Alembic</span><span>Transactions</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-card-head"><span class="skill-symbol">SEC</span><span class="skill-index">04 / SECURITY</span></div>
+          <h3>Authentication</h3>
+          <p>Identity, permissions and request safety.</p>
+          <div class="tag-list"><span>JWT</span><span>Password hashing</span><span>Authorization</span><span>Role-based access control</span><span>Data validation</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-card-head"><span class="skill-symbol">QA</span><span class="skill-index">05 / DELIVERY</span></div>
+          <h3>Testing & Tools</h3>
+          <p>Verification and everyday development tools.</p>
+          <div class="tag-list"><span>Pytest</span><span>API testing</span><span>Git</span><span>GitHub</span><span>GitHub Actions</span><span>Linux</span><span>VS Code</span></div>
+        </article>
+      </div>
     </section>
 
     <section class="section-wrap section-block" id="projects">
-      <div class="section-label"><span>03</span> SELECTED WORK</div>
-      <div class="section-heading-row"><h2>Projects that show<br><span class="muted-heading">how I think.</span></h2><p>Practical work across API development, data modeling, and backend fundamentals.</p></div>
+      <div class="section-kicker"><span>03</span> PROJECTS</div>
+      <div class="section-heading-row">
+        <h2>Selected backend<br /><span class="muted-heading">project work.</span></h2>
+        <p>Three API projects that demonstrate authentication, database integration, business workflows and testing.</p>
+      </div>
 
-      <article class="project-feature">
-        <div class="project-topline"><span class="project-number">CURRENT PROJECT</span><span class="project-status"><i></i> IN DEVELOPMENT</span></div>
-        <div class="project-main">
-          <div class="project-info">
+      <article class="current-project">
+        <div class="current-project-top"><span class="project-label">CURRENT PROJECT</span><span class="status-pill"><i></i> IN DEVELOPMENT</span></div>
+        <div class="current-project-content">
+          <div class="current-project-copy">
             <p class="project-kicker">BACKEND DEVELOPMENT / POSTGRESQL</p>
-            <h3>Lead<span class="gradient-text">Pilot</span></h3>
-            <p>My current backend project. The PostgreSQL database environment has been set up, and the application is under active development.</p>
-            <div class="project-points">
-              <div><span>↗</span> Current project — actively developing</div>
-              <div><span>↗</span> PostgreSQL database: <code>leadpilot_db</code></div>
+            <h3>Lead<span>Pilot</span></h3>
+            <p>LeadPilot is my current backend project. The PostgreSQL database environment has been set up, and application development is in progress.</p>
+            <div class="current-details">
+              <div><span>01</span> Current project — actively developing</div>
+              <div><span>02</span> PostgreSQL database — <code>leadpilot_db</code></div>
             </div>
-            <div class="tag-list project-tags"><span>Backend Development</span><span>PostgreSQL</span></div>
-            <span class="text-link project-no-link">Project details and source link will be added when ready</span>
+            <div class="tag-list"><span>Backend Development</span><span>PostgreSQL</span></div>
+            <span class="no-link-note">Project source link will be added when available.</span>
           </div>
-          <div class="project-visual inventory-visual">
-            <div class="mini-dashboard">
-              <div class="mini-dash-head"><span>LEADPILOT</span><span class="dash-pill">CURRENT WORK</span></div>
-              <div class="dash-stat-row"><div><small>PROJECT</small><b>In progress</b><span class="dash-green">Active development</span></div><div><small>DATABASE</small><b>PostgreSQL</b><span class="dash-green">leadpilot_db</span></div></div>
-              <div class="dash-foot"><span class="green-dot"></span> Implementation in progress</div>
+          <div class="current-project-visual">
+            <div class="leadpilot-panel">
+              <div class="leadpilot-panel-head"><span>LEADPILOT</span><span>WORKSPACE / 01</span></div>
+              <div class="leadpilot-panel-body">
+                <div class="leadpilot-mark">LP</div>
+                <p>PROJECT STATUS</p>
+                <strong>In progress</strong>
+                <div class="progress-track"><span></span></div>
+                <div class="leadpilot-db"><span class="db-icon">▤</span><span><small>DATABASE ENVIRONMENT</small><b>leadpilot_db</b></span><i></i></div>
+              </div>
+              <div class="leadpilot-panel-foot"><span class="status-dot"></span> Development active</div>
             </div>
           </div>
         </div>
       </article>
 
-      <div class="section-heading-row project-subheading"><h2>Completed project work</h2><p>Source code and implementation details are available in these repositories.</p></div>
       <div class="project-grid">
-        <article class="project-card"><div class="card-top"><span class="project-number">PROJECT 01</span><span class="card-icon">▦</span></div><p class="project-kicker">FASTAPI / INVENTORY MANAGEMENT</p><h3>InventoryX</h3><p>Inventory and order management API with product and category workflows, JWT authentication, stock adjustments, transaction history and order processing.</p><div class="tag-list"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>Alembic</span><span>pytest</span></div><div class="card-bottom"><span>Orders · Stock · Migrations</span><a href="https://github.com/kirubanandhan016/inventoryx-fastapi" target="_blank" rel="noreferrer" aria-label="View InventoryX on GitHub">↗</a></div></article>
-        <article class="project-card"><div class="card-top"><span class="project-number">PROJECT 02</span><span class="card-icon">⌕</span></div><p class="project-kicker">FASTAPI / RECRUITMENT</p><h3>Job Portal API</h3><p>Recruitment backend for job seekers and employers, including job listings, search, application workflows and ownership-based permissions.</p><div class="tag-list"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>JWT</span><span>pytest</span></div><div class="card-bottom"><span>Listings · Applications · Roles</span><a href="https://github.com/kirubanandhan016/job-portal-api" target="_blank" rel="noreferrer" aria-label="View Job Portal API on GitHub">↗</a></div></article>
-        <article class="project-card"><div class="card-top"><span class="project-number">PROJECT 03</span><span class="card-icon">↻</span></div><p class="project-kicker">FASTAPI / TASK MANAGEMENT</p><h3>TaskFlow API</h3><p>Task management REST API with user registration, JWT authentication, protected CRUD endpoints and user-specific task access.</p><div class="tag-list"><span>Python</span><span>FastAPI</span><span>SQLAlchemy</span><span>JWT</span><span>pytest</span></div><div class="card-bottom"><span>Authentication · Access control</span><a href="https://github.com/kirubanandhan016/taskflow-api" target="_blank" rel="noreferrer" aria-label="View TaskFlow API on GitHub">↗</a></div></article>
-        <article class="project-card"><div class="card-top"><span class="project-number">PROJECT 04</span><span class="card-icon">⌘</span></div><p class="project-kicker">SQL / DATABASE DESIGN</p><h3>E-commerce SQL Project</h3><p>Relational schema and query collection for customers, products, orders and order items, with constraints and analytical queries.</p><div class="tag-list"><span>SQL</span><span>SQLite</span><span>CTEs</span><span>Window functions</span></div><div class="card-bottom"><span>Schema · Queries · Indexes</span><a href="https://github.com/kirubanandhan016/ecommerce-sql-project" target="_blank" rel="noreferrer" aria-label="View E-commerce SQL project on GitHub">↗</a></div></article>
-        <article class="project-card"><div class="card-top"><span class="project-number">PROJECT 05</span><span class="card-icon">⇄</span></div><p class="project-kicker">FASTAPI / REST API</p><h3>Student Management API</h3><p>Introductory API project demonstrating endpoints, path parameters, query filtering, summary calculations and HTTP error handling.</p><div class="tag-list"><span>Python</span><span>FastAPI</span><span>REST</span><span>HTTP errors</span></div><div class="card-bottom"><span>Endpoints · Filtering · Validation</span><a href="https://github.com/kirubanandhan016/Student-Management-API" target="_blank" rel="noreferrer" aria-label="View Student Management API on GitHub">↗</a></div></article>
+        <article class="project-card">
+          <div class="project-card-top"><span class="project-index">PROJECT 01</span><span class="project-card-icon">▦</span></div>
+          <p class="project-kicker">INVENTORY / ORDER MANAGEMENT</p>
+          <h3>InventoryX</h3>
+          <p>Inventory and order management REST API with product and category workflows, JWT authentication, stock adjustments, transaction history and order processing.</p>
+          <div class="tag-list"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>Alembic</span><span>JWT</span><span>Pytest</span></div>
+          <div class="project-card-foot"><span>Stock · Orders · Migrations</span><a href="https://github.com/kirubanandhan016/inventoryx-fastapi" target="_blank" rel="noreferrer" aria-label="View InventoryX repository">View repository ↗</a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-card-top"><span class="project-index">PROJECT 02</span><span class="project-card-icon">⌕</span></div>
+          <p class="project-kicker">RECRUITMENT MANAGEMENT</p>
+          <h3>Job Portal API</h3>
+          <p>Recruitment backend for job seekers and employers, with job search, application submission and withdrawal, employer workflows and ownership-based permissions.</p>
+          <div class="tag-list"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>Pydantic</span><span>JWT</span><span>Pytest</span></div>
+          <div class="project-card-foot"><span>Listings · Applications · Roles</span><a href="https://github.com/kirubanandhan016/job-portal-api" target="_blank" rel="noreferrer" aria-label="View Job Portal API repository">View repository ↗</a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-card-top"><span class="project-index">PROJECT 03</span><span class="project-card-icon">↻</span></div>
+          <p class="project-kicker">TASK MANAGEMENT</p>
+          <h3>TaskFlow API</h3>
+          <p>Task management REST API with user registration, JWT authentication, protected CRUD endpoints and user-specific task access.</p>
+          <div class="tag-list"><span>Python</span><span>FastAPI</span><span>SQLAlchemy</span><span>SQLite</span><span>PostgreSQL</span><span>JWT</span><span>Pytest</span></div>
+          <div class="project-card-foot"><span>Authentication · Access control</span><a href="https://github.com/kirubanandhan016/taskflow-api" target="_blank" rel="noreferrer" aria-label="View TaskFlow API repository">View repository ↗</a></div>
+        </article>
       </div>
     </section>
 
-    <section class="section-wrap section-block" id="education">
-      <div class="section-label"><span>04</span> EDUCATION</div>
-      <div class="education-card"><div class="education-mark">BE</div><div class="education-main"><span class="project-kicker">2022 — 2026</span><h3>B.E. Electronics and Communication Engineering</h3><p>IFET College of Engineering · Villupuram</p><span class="education-university">Anna University</span></div><div class="cgpa"><strong>7.14</strong><span>CGPA / 10</span></div></div>
+    <section class="section-wrap section-block" id="experience">
+      <div class="section-kicker"><span>04</span> EXPERIENCE</div>
+      <div class="experience-card">
+        <div class="experience-date"><span>FEB 2026</span><i></i><span>SEP 2026</span></div>
+        <div class="experience-content">
+          <p class="project-kicker">PROFESSIONAL EXPERIENCE</p>
+          <h3>Embedded Trainee</h3>
+          <p class="experience-company">Emerxte Information Technology <span>·</span> Bengaluru</p>
+          <ul>
+            <li>Gained practical exposure to software development, programming fundamentals and technical problem-solving.</li>
+            <li>Strengthened debugging and analytical skills through technical assignments.</li>
+          </ul>
+        </div>
+        <div class="experience-type">TRAINEE</div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="background">
+      <div class="section-kicker"><span>05</span> EDUCATION & CERTIFICATIONS</div>
+      <div class="background-grid">
+        <article class="education-card">
+          <div class="education-icon">BE</div>
+          <div class="education-main">
+            <p class="project-kicker">EDUCATION · AUGUST 2026</p>
+            <h3>Bachelor of Engineering</h3>
+            <p>Electronics and Communication Engineering</p>
+            <span>Anna University · Tamil Nadu</span>
+          </div>
+          <div class="cgpa"><strong>7.14</strong><span>CGPA / 10</span></div>
+        </article>
+        <article class="certifications-card">
+          <p class="project-kicker">CERTIFICATIONS</p>
+          <h3>Continuous learning.</h3>
+          <ul>
+            <li><span>01</span><div><strong>HarvardX — CS50 SQL</strong><small>Introduction to Databases with SQL</small></div></li>
+            <li><span>02</span><div><strong>W3Schools — Python Certification</strong></div></li>
+            <li><span>03</span><div><strong>W3Schools — SQL Certification</strong></div></li>
+          </ul>
+        </article>
+      </div>
     </section>
 
     <section class="contact-section" id="contact">
       <div class="section-wrap contact-inner">
-        <div class="section-label"><span>05</span> NEXT STEP</div>
-        <p class="project-kicker">AVAILABLE FOR ENTRY-LEVEL ROLES</p>
-        <h2>Let's build something<br><span class="gradient-text">useful together.</span></h2>
-        <p class="contact-copy">I'm looking for an opportunity to contribute, learn from experienced engineers, and grow as a Python Backend Developer.</p>
-        <a class="button button-primary" href="mailto:kirubanandhan016@gmail.com">Get in touch <span>↗</span></a>
-        <div class="contact-links"><a href="mailto:kirubanandhan016@gmail.com">kirubanandhan016@gmail.com</a><a href="https://github.com/kirubanandhan016" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/kirubanandhan-v-98bb83443/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+        <div class="section-kicker"><span>06</span> GET IN TOUCH</div>
+        <p class="project-kicker">OPEN TO PYTHON BACKEND / FASTAPI ROLES</p>
+        <h2>Let's build something<br /><span>useful together.</span></h2>
+        <p class="contact-copy">I am ready to learn, contribute and grow with a team building reliable software. Contact me about entry-level backend opportunities.</p>
+        <a class="button button-primary" href="mailto:kirubanandhan016@gmail.com">Email me <span>↗</span></a>
+        <div class="contact-details">
+          <a href="mailto:kirubanandhan016@gmail.com">kirubanandhan016@gmail.com</a>
+          <a href="tel:+918675118864">+91 86751 18864</a>
+          <a href="https://github.com/kirubanandhan016" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/kirubanandhan-v-98bb83443/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span><span>kiruba<span class="muted">.dev</span></span></a><span>Designed with intent. Built for the backend.</span><a href="#home">BACK TO TOP ↑</a></footer>
+
+  <footer class="site-footer">
+    <a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span><span>kiruba<span class="brand-dot">.dev</span></span></a>
+    <span>Python · APIs · Data · Engineering</span>
+    <a href="#home">BACK TO TOP ↑</a>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
