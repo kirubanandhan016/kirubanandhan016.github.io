@@ -40,3 +40,103 @@
 .focus-tag{align-self:flex-start;padding:5px 8px;border:1px solid var(--line2);border-radius:3px;color:#8ea4c3;font:8px var(--mono);letter-spacing:.08em}
 @media(max-width:850px){.focus-heading{display:block}.focus-heading .section-aside{margin-top:14px}.focus-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.focus-section{padding-top:70px;padding-bottom:70px}.focus-heading h2{font-size:37px}.focus-grid{grid-template-columns:1fr}.focus-card{min-height:155px;padding:17px}}
+
+
+/* =========================================================
+   CYBER TECH REFRESH — Portfolio Template 05
+   Neon terminal aesthetic; original content and structure kept.
+   ========================================================= */
+:root{
+  color-scheme:dark;
+  --bg:#050b0a;--bg2:#07110f;--panel:#0a1713;--card:#0d1d17;--card2:#10251c;
+  --blue:#a3ff12;--blue2:#c4ff55;--text:#eaffdf;--muted:#9bb49e;--dim:#68816e;
+  --line:#1d3a2a;--line2:#31583c;--mono:"JetBrains Mono",monospace;
+  --body:"Inter",sans-serif;--head:"Space Grotesk",sans-serif;--max:1180px
+}
+html{scroll-behavior:smooth}
+body.theme-cyber{background:radial-gradient(ellipse at 78% 5%,rgba(82,255,35,.10),transparent 32%),radial-gradient(ellipse at 5% 40%,rgba(20,130,68,.08),transparent 35%),var(--bg);color:var(--text)}
+body.theme-cyber:before{position:fixed;inset:0;z-index:-1;pointer-events:none;content:"";opacity:.14;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(163,255,18,.045) 4px);mix-blend-mode:screen}
+.theme-cyber .site-grid{opacity:.22;background-image:linear-gradient(rgba(163,255,18,.10) 1px,transparent 1px),linear-gradient(90deg,rgba(163,255,18,.10) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,black,transparent 88%)}
+.theme-cyber .site-header{border-bottom:1px solid rgba(163,255,18,.22);background:rgba(5,11,10,.88);box-shadow:0 8px 35px rgba(0,0,0,.25)}
+.theme-cyber .wordmark-mark{border-color:rgba(163,255,18,.65);border-radius:3px;color:var(--blue);box-shadow:0 0 18px rgba(163,255,18,.12)}
+.theme-cyber .wordmark-mark span,.theme-cyber .wordmark-muted{color:var(--blue2)}
+.theme-cyber .primary-nav a{font-family:var(--mono);font-size:10px;letter-spacing:.02em}
+.theme-cyber .primary-nav a:hover,.theme-cyber .primary-nav a.active{color:var(--blue)}
+.theme-cyber .button{border-radius:3px;font-family:var(--mono);letter-spacing:.015em;text-transform:uppercase}
+.theme-cyber .button-primary{background:var(--blue);border-color:var(--blue);color:#081008;box-shadow:0 0 22px rgba(163,255,18,.17)}
+.theme-cyber .button-primary:hover{background:var(--blue2);box-shadow:0 0 30px rgba(163,255,18,.28)}
+.theme-cyber .button-secondary,.theme-cyber .button-outline{border-color:#42613d;background:rgba(163,255,18,.035);color:var(--text)}
+.theme-cyber .button-secondary:hover,.theme-cyber .button-outline:hover{border-color:var(--blue);color:var(--blue)}
+.theme-cyber .button-quiet{color:var(--muted)}
+.theme-cyber .hero{position:relative}
+.theme-cyber .eyebrow-line,.theme-cyber .hero-kicker,.theme-cyber .section-label,.theme-cyber .hero-bottom-note,.theme-cyber .proof-number,.theme-cyber .project-card-top,.theme-cyber .project-overline,.theme-cyber .project-kicker,.theme-cyber .current-project-top,.theme-cyber .focus-number,.theme-cyber .focus-tag{font-family:var(--mono);letter-spacing:.09em}
+.theme-cyber .eyebrow-line{color:#b7d7b1}
+.theme-cyber .status-dot,.theme-cyber .current-project-top i{background:var(--blue);box-shadow:0 0 0 4px rgba(163,255,18,.10),0 0 14px rgba(163,255,18,.75)}
+.theme-cyber .hero h1{letter-spacing:-.065em;text-shadow:0 0 32px rgba(163,255,18,.08)}
+.theme-cyber .hero h1>span:not(.blue-period){color:var(--blue);text-shadow:0 0 30px rgba(163,255,18,.18)}
+.theme-cyber .blue-period,.theme-cyber .section-heading h2 span,.theme-cyber .focus-heading h2 span{color:var(--blue)}
+.theme-cyber .hero-lede{color:#b4cbb6}
+.theme-cyber .terminal-window{border:1px solid #42613d;border-radius:5px;background:#07110d;box-shadow:0 0 0 1px rgba(163,255,18,.06),0 24px 80px rgba(0,0,0,.5),0 0 45px rgba(73,255,42,.09)}
+.theme-cyber .terminal-top,.theme-cyber .terminal-bottom{background:#0c1b12;border-color:#26452b;color:#91ad92}
+.theme-cyber .terminal-dots i{background:var(--blue);opacity:.75}
+.theme-cyber .terminal-lock,.theme-cyber .terminal-prompt,.theme-cyber .syntax-green{color:var(--blue)}
+.theme-cyber .syntax-blue{color:#a6e3a1}.theme-cyber .syntax-purple{color:#d7aefb}.theme-cyber .syntax-yellow{color:#f9e2af}
+.theme-cyber .terminal-cursor{background:var(--blue);box-shadow:0 0 12px var(--blue)}
+.theme-cyber .visual-float{border:1px solid #31583c;border-radius:4px;background:rgba(8,22,14,.94);box-shadow:0 10px 35px rgba(0,0,0,.35)}
+.theme-cyber .float-icon,.theme-cyber .float-icon-blue{color:var(--blue);background:rgba(163,255,18,.08)}
+.theme-cyber .visual-orb{background:radial-gradient(circle,rgba(163,255,18,.16),transparent 68%)}
+.theme-cyber .cyber-prompt{color:var(--blue)}
+.theme-cyber .cyber-build-tag{color:var(--blue)!important}
+.theme-cyber .proof-strip{border-block-color:var(--line)}
+.theme-cyber .proof-strip>div{border-color:var(--line)}
+.theme-cyber .proof-number{color:var(--blue)}
+.theme-cyber .content-section,.theme-cyber .focus-section{position:relative}
+.theme-cyber .section-tinted{background:linear-gradient(180deg,rgba(9,24,16,.9),rgba(5,11,10,.78));border-block:1px solid rgba(163,255,18,.10)}
+.theme-cyber .section-heading h2,.theme-cyber .focus-heading h2{letter-spacing:-.055em}
+.theme-cyber .section-label{color:var(--blue)}
+.theme-cyber .section-aside,.theme-cyber .about-copy p{color:#9bb49e}
+.theme-cyber .about-tags span,.theme-cyber .skill-list span,.theme-cyber .project-stack span{border:1px solid #294630;border-radius:3px;background:rgba(163,255,18,.035);color:#c4d9c1}
+.theme-cyber .about-stat{border-color:var(--line)}
+.theme-cyber .stat-index{color:var(--blue)}
+.theme-cyber .skill-card,.theme-cyber .focus-card,.theme-cyber .education-card,.theme-cyber .timeline-item{border:1px solid var(--line);border-radius:4px;background:linear-gradient(145deg,#0c1a13,#08120e);transition:border-color .2s,transform .2s,box-shadow .2s}
+.theme-cyber .skill-card:hover,.theme-cyber .focus-card:hover,.theme-cyber .project-card:hover{border-color:rgba(163,255,18,.65);box-shadow:0 0 24px rgba(163,255,18,.07);transform:translateY(-3px)}
+.theme-cyber .skill-card-head b{border-color:#42613d;border-radius:3px;color:var(--blue)}
+.theme-cyber .skill-card h3,.theme-cyber .focus-card h3{color:#eaffdf}
+.theme-cyber .skills-footnote,.theme-cyber .api-note{color:#8da98e}
+.theme-cyber .blue-dot{background:var(--blue)}
+.theme-cyber .current-project{border:1px solid rgba(163,255,18,.35);border-radius:4px;background:radial-gradient(ellipse at 85% 50%,rgba(163,255,18,.10),transparent 45%),linear-gradient(120deg,#102318,#09150f)}
+.theme-cyber .current-project-top>span:first-child,.theme-cyber .current-project-body h3 span{color:var(--blue)}
+.theme-cyber .current-ring{border-color:rgba(163,255,18,.4)}
+.theme-cyber .current-core{border-color:var(--blue);background:#142a18;color:var(--blue);box-shadow:0 0 25px rgba(163,255,18,.12)}
+.theme-cyber .project-card{border:1px solid #24432e;border-radius:4px;background:#09150f}
+.theme-cyber .project-card-top{border-color:var(--line);color:#a3bba2}
+.theme-cyber .project-type{border-color:rgba(163,255,18,.35);border-radius:2px;color:var(--blue)}
+.theme-cyber .project-visual{background:radial-gradient(circle at 50% 50%,rgba(163,255,18,.10),transparent 66%),#07110d;border-color:var(--line)}
+.theme-cyber .mini-window,.theme-cyber .job-ui,.theme-cyber .task-ui{border-color:#35563b;border-radius:4px;background:#0b1a11}
+.theme-cyber .mini-window-top,.theme-cyber .job-row,.theme-cyber .task-item{border-color:#25412c}
+.theme-cyber .mini-metrics div{border-color:#31583c;border-radius:3px}
+.theme-cyber .mini-metrics b{color:var(--blue)}
+.theme-cyber .mini-chart i{background:linear-gradient(#c4ff55,#62b82d)}
+.theme-cyber .job-row em,.theme-cyber .task-ui-head b{background:rgba(163,255,18,.14);color:var(--blue)}
+.theme-cyber .project-card-content h3{color:#eaffdf}
+.theme-cyber .project-highlights li:before{background:var(--blue);box-shadow:0 0 8px rgba(163,255,18,.35)}
+.theme-cyber .supporting-work,.theme-cyber .github-panel{border:1px solid var(--line);border-radius:4px;background:linear-gradient(145deg,rgba(12,28,18,.96),rgba(7,17,12,.96))}
+.theme-cyber .supporting-links a{border-color:var(--line);border-radius:3px;background:rgba(163,255,18,.025)}
+.theme-cyber .supporting-links a:hover{border-color:var(--blue)}
+.theme-cyber .supporting-links a>span,.theme-cyber .inline-link{color:var(--blue)}
+.theme-cyber .github-profile img{border-color:#42613d;border-radius:4px}
+.theme-cyber .github-handle{color:var(--blue)}
+.theme-cyber .github-stats{border-color:var(--line)}
+.theme-cyber .timeline-line:before,.theme-cyber .timeline-dot{background:var(--blue)}
+.theme-cyber .contact-card,.theme-cyber .contact-form{border:1px solid var(--line);border-radius:4px;background:#09150f}
+.theme-cyber input,.theme-cyber textarea{border:1px solid #31583c;border-radius:3px;background:#06100b;color:var(--text)}
+.theme-cyber input:focus,.theme-cyber textarea:focus{outline:1px solid var(--blue);border-color:var(--blue)}
+.theme-cyber footer{border-top:1px solid var(--line);background:#040907}
+.theme-cyber .menu-toggle{border-color:#31583c;border-radius:3px}
+.theme-cyber .menu-toggle span{background:var(--blue)}
+.theme-cyber .reveal{transition:opacity .65s ease,transform .65s ease}
+@keyframes cyberPulse{0%,100%{box-shadow:0 0 0 0 rgba(163,255,18,.0)}50%{box-shadow:0 0 0 6px rgba(163,255,18,.035)}}
+.theme-cyber .status-dot{animation:cyberPulse 2.8s ease-in-out infinite}
+@media(max-width:900px){.theme-cyber .site-header{padding-inline:22px}.theme-cyber .primary-nav{background:#07110d;border:1px solid var(--line)}}
+@media(max-width:600px){.theme-cyber .hero h1{font-size:clamp(42px,12vw,62px)}.theme-cyber .hero-bottom-note{gap:8px}.theme-cyber .cyber-build-tag{display:none}}
+@media(prefers-reduced-motion:reduce){.theme-cyber .status-dot{animation:none}.theme-cyber *{scroll-behavior:auto!important;transition-duration:.01ms!important}}
