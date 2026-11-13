@@ -14,9 +14,9 @@ Personal portfolio for entry-level **Python Backend Developer**, **Junior Python
 | InventoryX API | Product/category CRUD, inventory adjustments/history, order placement and cancellation, JWT, SQLAlchemy, Alembic, Pytest and CI | [inventoryx-fastapi](https://github.com/kirubanandhan016/inventoryx-fastapi) |
 | Job Portal API | Job search/filtering, employer/job-seeker roles, JWT, applications, resource ownership, PostgreSQL and Pytest | [job-portal-api](https://github.com/kirubanandhan016/job-portal-api) |
 | TaskFlow API | Task CRUD, JWT authentication, user-scoped access, SQLAlchemy, Pydantic and Pytest | [taskflow-api](https://github.com/kirubanandhan016/taskflow-api) |
-| Student Management API | Student retrieval, department/marks filtering, summary endpoints, validation and Pytest; in-memory data only | [Student-Management-API](https://github.com/kirubanandhan016/Student-Management-API) |
+| Student Management API | Student retrieval, department/marks filtering and summary endpoints; in-memory sample data, not persistent storage | [Student-Management-API](https://github.com/kirubanandhan016/Student-Management-API) |
 
-**Current work — LeadPilot:** LeadPilot is in development. The PostgreSQL database environment `leadpilot_db` has been created. No public repository or completed feature list is linked until those details are published.
+**Current work — LeadPilot:** LeadPilot is in development. The portfolio intentionally does not link a repository or claim completed features until the implementation is ready to present.
 
 ## Technology
 
@@ -39,13 +39,7 @@ Personal portfolio for entry-level **Python Backend Developer**, **Junior Python
 
 The portfolio uses responsive HTML, CSS and vanilla JavaScript. It is designed for GitHub Pages and requires no build step.
 
-## Contact form setup
-
-The contact form posts to [FormSubmit](https://formsubmit.co/), which forwards submissions to the portfolio email address. On the first real submission, FormSubmit sends an activation email to the recipient. Open that email and confirm the form once before relying on delivery. Do not disable its CAPTCHA protection.
-
-The form is a hosted third-party integration; there is no custom API server in this static GitHub Pages repository.
-
-## Repository structure
+## Contact\n\nThe portfolio uses direct email, GitHub and LinkedIn links. It does not currently advertise a custom contact-form backend.\n\n## Repository structure
 
 ```text
 index.html
@@ -78,7 +72,7 @@ Then open http://localhost:8000. The hosted contact form requires a web server a
 
 ## Accuracy notes
 
-- Project descriptions are based on the README files in the linked repositories.
+- Project descriptions are based on the README files in the linked repositories and distinguish implemented features from future work.\n- The architecture graphic is a conceptual reference flow, not a claim of a deployed production system.
 - Student Management API uses in-memory sample data; it is not described as a database-backed application.
 - Job Portal API does not claim Alembic migrations; its README says schema migrations remain future work.
 - LeadPilot is marked as in development without an invented public repository URL or feature list.
