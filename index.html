@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07110F">
+  <meta name="theme-color" content="#071A2B">
   <meta name="description" content="Kirubanandhan V — aspiring Python Backend Developer in Bengaluru, India. Explore FastAPI, REST API, SQLAlchemy, PostgreSQL and database-driven projects.">
   <meta name="author" content="Kirubanandhan V">
   <meta property="og:type" content="website">
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Kirubanandhan V. — Python Backend Developer</title>
 </head>
-<body class="theme-cyber">
+<body class="theme-api">
 <a class="skip-link" href="#main">Skip to content</a>
 <div class="site-grid" aria-hidden="true"></div>
 <header class="site-header">
@@ -50,28 +50,27 @@
         <a class="social-link" href="https://github.com/kirubanandhan016" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.5 21.6c.6.1.8-.2.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.5-2.7 5.5-5.3 5.8.4.3.8 1 .8 2v3.4c0 .4.2.7.8.6A11.1 11.1 0 0 0 12 .9Z"/></svg>GitHub ↗</a>
       </div>
     </div>
-    <aside class="hero-visual" aria-label="Backend developer terminal illustration">
-      <div class="terminal-window">
-        <div class="terminal-top"><div class="terminal-dots"><i></i><i></i><i></i></div><span>kiruba@backend: ~/projects</span><span class="terminal-lock">●</span></div>
-        <div class="terminal-body">
-          <div class="terminal-line"><span class="terminal-prompt">$</span> python -m uvicorn app.main:app</div>
-          <div class="terminal-output">INFO: Application startup complete.</div>
-          <div class="terminal-gap"></div>
-          <div><span class="syntax-purple">class</span> <span class="syntax-blue">BackendDeveloper</span>:</div>
-          <div class="code-indent"><span class="syntax-purple">def</span> <span class="syntax-yellow">build</span>(self):</div>
-          <div class="code-indent-2">stack = [</div>
-          <div class="code-indent-3"><span class="syntax-green">"Python"</span>, <span class="syntax-green">"FastAPI"</span>,</div>
-          <div class="code-indent-3"><span class="syntax-green">"SQLAlchemy"</span>, <span class="syntax-green">"PostgreSQL"</span></div>
-          <div class="code-indent-2">]</div>
-          <div class="code-indent-2"><span class="syntax-purple">return</span> reliable_apis(stack)</div>
-          <div class="terminal-gap"></div>
-          <div class="terminal-line"><span class="terminal-prompt">›</span> <span class="terminal-cursor"></span></div>
-        </div>
-        <div class="terminal-bottom"><span><i></i> SYSTEMS THINKING</span><span>PYTHON · API · DATA</span></div>
+    <aside class="hero-visual api-hero-visual" aria-label="REST API documentation preview">
+      <div class="api-console">
+        <div class="api-console-top"><div class="api-window-dots"><i></i><i></i><i></i></div><span>API WORKSPACE</span><span class="api-live"><i></i> DOCUMENTED</span></div>
+        <div class="api-console-title"><span>PROJECT / API EXPLORER</span><strong>REST endpoints</strong><small>Example interface · illustrative routes</small></div>
+        <div class="api-request"><span class="api-method get">GET</span><code>/api/v1/users/me</code><span class="api-lock">AUTH</span></div>
+        <div class="api-request"><span class="api-method post">POST</span><code>/api/v1/auth/login</code><span class="api-lock">JWT</span></div>
+        <div class="api-request"><span class="api-method post">POST</span><code>/api/v1/products</code><span class="api-lock">CRUD</span></div>
+        <div class="api-request"><span class="api-method get">GET</span><code>/api/v1/jobs?location=...</code><span class="api-lock">FILTER</span></div>
+        <div class="api-response-head"><span>RESPONSE PREVIEW</span><span>JSON</span></div>
+        <pre class="api-response"><span>{</span>
+  <b>"status"</b>: <em>"success"</em>,
+  <b>"data"</b>: {
+    <b>"framework"</b>: <em>"FastAPI"</em>,
+    <b>"database"</b>: <em>"PostgreSQL"</em>,
+    <b>"auth"</b>: <em>"JWT"</em>
+  }
+<span>}</span></pre>
+        <div class="api-console-bottom"><span><i></i> API DESIGN · VALIDATION · DATA</span><span>OPENAPI / REST</span></div>
       </div>
-      <div class="visual-float visual-float-top"><span class="float-icon">⌘</span><div><strong>Clean API design</strong><small>Routes · Schemas · Services</small></div></div>
-      <div class="visual-float visual-float-bottom"><span class="float-icon float-icon-blue">▤</span><div><strong>Relational data</strong><small>SQLAlchemy · Alembic</small></div></div>
-      <div class="visual-orb"></div>
+      <div class="api-float api-float-top"><b>01</b><span><strong>Request validation</strong><small>Pydantic schemas</small></span></div>
+      <div class="api-float api-float-bottom"><b>02</b><span><strong>Data persistence</strong><small>SQLAlchemy · PostgreSQL</small></span></div>
     </aside>
     <div class="hero-bottom-note"><span class="cyber-build-tag">BUILD_STATUS: ACTIVE</span><span>01 — PROFILE</span><span>BUILDING, TESTING, LEARNING</span><span>SCROLL TO EXPLORE ↓</span></div>
   </section>
