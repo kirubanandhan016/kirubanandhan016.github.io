@@ -176,11 +176,16 @@ async function loadGitHubProfile() {
     if (!container) return;
     const featured = featuredNames.map((name) => repositories.find((repo) => repo.name === name)).filter(Boolean);
     if (!featured.length) return;
+    const escapeHTML = (value) => String(value).replace(/[&<>"']/g, (character) => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+    })[character]);
     container.innerHTML = featured.map((repo) => {
-      const language = repo.language || "Code";
+      const repositoryUrl = new URL(repo.html_url);
+      if (repositoryUrl.protocol !== "https:" || repositoryUrl.hostname !== "github.com") return "";
+      const language = String(repo.language || "Code");
       const dotClass = language.toLowerCase() === "sql" ? "sql-dot" : language.toLowerCase() === "python" ? "python-dot" : "";
       const description = descriptions[repo.name] || repo.description || "Public repository";
-      return `<a href="${repo.html_url}" target="_blank" rel="noopener noreferrer"><span class="repo-language-dot ${dotClass}"></span><strong>${repo.name}</strong><small>${description}</small><b>↗</b></a>`;
+      return `<a href="${escapeHTML(repositoryUrl.href)}" target="_blank" rel="noopener noreferrer"><span class="repo-language-dot ${dotClass}"></span><strong>${escapeHTML(repo.name)}</strong><small>${escapeHTML(description)}</small><b>↗</b></a>`;
     }).join("");
   } catch {
     // Keep the verified static repository links in the HTML as a useful fallback.
