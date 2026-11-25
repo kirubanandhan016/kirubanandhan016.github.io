@@ -58,11 +58,13 @@ const projectDetails = {
       "Salted PBKDF2-HMAC-SHA256 password hashing and signed JWT bearer access tokens.",
       "Product and category CRUD, stock adjustment and inventory transaction history.",
       "Authenticated order placement, retrieval and cancellation.",
-      "Order-row locking during cancellation to avoid restoring the same stock twice on databases that support row-level locks."
+      "Duplicate product lines are aggregated before stock is reserved and purchase-time prices are stored on order items.",
+      "PostgreSQL row-level locks protect concurrent order placement and cancellation against overselling and double stock restoration.",
+      "Database CHECK constraints enforce valid order states, positive quantities, and non-negative inventory and monetary values."
     ],
     data: "SQLAlchemy ORM with SQLite as the default local database and PostgreSQL configuration support. Alembic migrations are committed and are the schema-change source of truth.",
-    quality: "Pytest API tests use isolated in-memory SQLite fixtures. GitHub Actions runs the test suite and applies migrations to a PostgreSQL 16 service. The current suite covers sequential cancellation; concurrent PostgreSQL API integration testing remains a useful next step.",
-    note: "Portfolio and learning project; not independently security-audited for production. No public live deployment is listed.",
+    quality: "Pytest API tests use isolated SQLite fixtures locally. GitHub Actions runs the suite against PostgreSQL 16, applies Alembic migrations, verifies the recorded revision, builds the Docker image, and runs PostgreSQL-only concurrent order and cancellation tests.",
+    note: "Portfolio project; not independently security-audited. A Docker Compose + Caddy VPS deployment template is available in the repository, but no public live deployment is configured yet.",
     url: "https://github.com/kirubanandhan016/inventoryx-fastapi"
   },
   jobportal: {
@@ -112,7 +114,7 @@ const projectDetails = {
       "Interactive Swagger UI and generated OpenAPI documentation."
     ],
     data: "SQLAlchemy ORM with SQLite as the default local database and PostgreSQL configuration support. Versioned Alembic migrations are applied by the Docker entrypoint.",
-    quality: "Pytest covers authentication, authorization, validation and task workflows. GitHub Actions runs tests with isolated SQLite data and performs a PostgreSQL connectivity/schema smoke check.",
+    quality: "Pytest covers authentication, authorization, validation, task workflows, SQLite foreign-key enforcement and user/task cascade behavior. GitHub Actions also verifies PostgreSQL migrations, application startup and Docker image build.",
     note: "Pagination/filtering, refresh-token rotation, rate limiting and deployment hardening remain future improvements. No public live deployment is listed.",
     url: "https://github.com/kirubanandhan016/taskflow-api"
   }
