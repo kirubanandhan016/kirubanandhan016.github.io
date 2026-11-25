@@ -72,7 +72,7 @@ The repository is configured for GitHub Pages at https://kirubanandhan016.github
 
 - Project feature descriptions are based on the public repository documentation.
 - InventoryX tests use isolated SQLite fixtures; CI applies migrations to PostgreSQL 16. Full concurrent PostgreSQL API integration coverage remains future work.
-- Job Portal tests use SQLite route-handler sessions; its PostgreSQL CI step is a schema/connectivity smoke check. Alembic migrations are not currently implemented.
+- Job Portal tests use SQLite route-handler sessions; its PostgreSQL CI step verifies the migration workflow and schema state. The repository's Alembic migration workflow is documented in its README.
 - TaskFlow defaults to SQLite and supports PostgreSQL configuration. Several hardening features remain future work as documented in its README.
 - No live demo is linked because no verified public deployment URL was found for the featured APIs.
 - LeadPilot remains in development and is not linked to an unpublished repository.
