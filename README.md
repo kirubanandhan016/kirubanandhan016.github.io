@@ -78,3 +78,24 @@ The repository is configured for GitHub Pages at https://kirubanandhan016.github
 - LeadPilot remains in development and is not linked to an unpublished repository.
 - GitHub activity is linked to the live GitHub profile rather than represented with fabricated contribution counts.
 - Resume PDF is linked from the repository root; keep its contents synchronized with the experience and education displayed here.
+
+
+## Static site architecture
+
+```mermaid
+flowchart TD
+    Visitor[Portfolio visitor] --> HTML[index.html]
+    HTML --> CSS[style.css]
+    HTML --> JS[script.js]
+    JS --> GH[Public GitHub REST API]
+    JS --> Mail[mailto contact draft]
+    GH --> UI[Project and profile metadata]
+    UI --> Visitor
+```
+
+The site is a static GitHub Pages project. It does not use a private backend or store contact-form submissions; the contact action opens a pre-filled email draft in the visitor's mail application.
+
+## Screenshots
+
+The README currently links the live GitHub Pages site and résumé. Add current desktop and mobile screenshots under `assets/screenshots/` after capturing the deployed site at those viewport sizes; no unverified screenshots are included.
+
