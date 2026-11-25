@@ -13,7 +13,7 @@ Premium, responsive developer portfolio built with semantic HTML, CSS and vanill
 - **Home:** backend-focused introduction, location, direct links and a developer terminal visual.
 - **About:** project-led backend development summary.
 - **Skills:** technologies grouped by actual project and workflow evidence; no proficiency percentages.
-- **Projects:** LeadPilot (in development), plus InventoryX, Job Portal API and TaskFlow with repository links and implementation details.
+- **Projects:** LeadPilot (in development), plus InventoryX, PeoplePulse EMS, Job Portal API and TaskFlow with repository links and implementation details.
 - **GitHub:** public profile counts and featured repository metadata are fetched from the unauthenticated GitHub REST API when available. Static verified links remain as a fallback.
 - **Experience:** Embedded Trainee experience.
 - **Education:** B.E. Electronics and Communication Engineering, IFET College of Engineering, Anna University.
@@ -24,7 +24,7 @@ Premium, responsive developer portfolio built with semantic HTML, CSS and vanill
 | Project | Verified implementation focus |
 |---|---|
 | [InventoryX API](https://github.com/kirubanandhan016/inventoryx-fastapi) | FastAPI inventory and order workflows, JWT authentication, SQLAlchemy, Alembic, SQLite/PostgreSQL configuration, Pytest and CI |
-| [Job Portal API](https://github.com/kirubanandhan016/job-portal-api) | Job-seeker and employer workflows, job search, applications, role/ownership checks, PostgreSQL, Argon2, JWT and Pytest |
+| [PeoplePulse EMS](https://github.com/kirubanandhan016/employee-management-system) | Full-stack employee management with Admin/HR/Employee roles, attendance, leave, salary workflows, FastAPI, React, PostgreSQL, SQLAlchemy and Alembic |\n| [Job Portal API](https://github.com/kirubanandhan016/job-portal-api) | Job-seeker and employer workflows, job search, applications, role/ownership checks, PostgreSQL, Argon2, JWT, Alembic and Pytest |
 | [TaskFlow API](https://github.com/kirubanandhan016/taskflow-api) | JWT-protected task CRUD, per-user resource isolation, SQLAlchemy, Pydantic, SQLite/PostgreSQL configuration and Pytest |
 
 Supporting work includes [E-Commerce SQL Analytics](https://github.com/kirubanandhan016/ecommerce-sql-project), [Student Performance Analysis](https://github.com/kirubanandhan016/student-performance-analysis-sql) and [NeetCode Submissions](https://github.com/kirubanandhan016/neetcode-submissions).
@@ -72,8 +72,8 @@ The repository is configured for GitHub Pages at https://kirubanandhan016.github
 
 - Project feature descriptions are based on the public repository documentation.
 - InventoryX tests use isolated SQLite fixtures; CI applies migrations to PostgreSQL 16. Full concurrent PostgreSQL API integration coverage remains future work.
-- Job Portal tests use SQLite route-handler sessions; its PostgreSQL CI step verifies the migration workflow and schema state. The repository's Alembic migration workflow is documented in its README.
-- TaskFlow defaults to SQLite and supports PostgreSQL configuration. Several hardening features remain future work as documented in its README.
+- Job Portal tests use SQLite route-handler sessions; CI also builds the Docker image and verifies the versioned Alembic migration workflow against PostgreSQL 16. Full PostgreSQL application-workflow integration tests remain future work.
+- TaskFlow defaults to SQLite and supports PostgreSQL configuration, with Alembic migrations applied by its Docker entrypoint. Refresh-token rotation, rate limiting and deployment hardening remain future work.
 - No live demo is linked because no verified public deployment URL was found for the featured APIs.
 - LeadPilot remains in development and is not linked to an unpublished repository.
 - GitHub activity is linked to the live GitHub profile rather than represented with fabricated contribution counts.
