@@ -77,10 +77,27 @@ const projectDetails = {
       "Job application submission and withdrawal, plus employer review and status updates.",
       "Ownership checks prevent one employer or applicant from managing another user's resources."
     ],
-    data: "PostgreSQL persistence through SQLAlchemy. Passwords use Argon2 via pwdlib. The current schema is created from SQLAlchemy metadata at startup; Alembic migrations are not yet implemented.",
-    quality: "Pytest covers registration security, JWT validation, job filters, employer ownership and application permissions. Tests call route-handler functions with isolated SQLite sessions; GitHub Actions also performs a PostgreSQL 16 connectivity/schema smoke check, not a full PostgreSQL workflow test.",
+    data: "PostgreSQL persistence through SQLAlchemy. Passwords use Argon2 via pwdlib. The repository includes a versioned Alembic migration workflow, including job salary integrity constraints.",
+    quality: "Pytest covers registration security, JWT validation, job filters, employer ownership and application permissions. Tests call route-handler functions with isolated SQLite sessions. GitHub Actions runs the tests, builds the Docker image and verifies Alembic migrations against PostgreSQL 16; full PostgreSQL workflow integration tests remain future work.",
     note: "Employer access is granted through a trusted database-administrator process outside the application. An in-app approval queue and production hardening are future work. No public live deployment is listed.",
     url: "https://github.com/kirubanandhan016/job-portal-api"
+  },
+  peoplepulse: {
+    title: "PeoplePulse EMS",
+    subtitle: "Employee management · FastAPI + React",
+    overview: "A full-stack employee management system with Admin, HR Manager and Employee roles, covering core employee operations.",
+    architecture: "React frontend → FastAPI routers and role-based dependencies → service and SQLAlchemy model layers → PostgreSQL. Alembic manages schema changes.",
+    features: [
+      "Role-based access for administrators, HR managers and employees.",
+      "Employee directory, department management and employee assignment.",
+      "Daily attendance check-in/check-out and attendance history.",
+      "Leave application, cancellation, approval and rejection workflows.",
+      "Salary records and server-side net salary calculation."
+    ],
+    data: "PostgreSQL persistence with SQLAlchemy 2.0 models and versioned Alembic migrations.",
+    quality: "The repository includes backend pytest integration tests. Its CI workflow runs the backend test suite and builds the React frontend. Review the workflow checks for the latest result.",
+    note: "Portfolio project. Production deployment still requires environment-specific secrets, TLS termination, operational monitoring, backups and a security review.",
+    url: "https://github.com/kirubanandhan016/employee-management-system"
   },
   taskflow: {
     title: "TaskFlow API",
@@ -94,9 +111,9 @@ const projectDetails = {
       "Pydantic request validation and structured HTTP errors.",
       "Interactive Swagger UI and generated OpenAPI documentation."
     ],
-    data: "SQLAlchemy ORM with SQLite as the default local database and PostgreSQL configuration support.",
+    data: "SQLAlchemy ORM with SQLite as the default local database and PostgreSQL configuration support. Versioned Alembic migrations are applied by the Docker entrypoint.",
     quality: "Pytest covers authentication, authorization, validation and task workflows. GitHub Actions runs tests with isolated SQLite data and performs a PostgreSQL connectivity/schema smoke check.",
-    note: "Alembic migrations, pagination/filtering, refresh-token rotation, rate limiting and deployment hardening are listed as future improvements. No public live deployment is listed.",
+    note: "Pagination/filtering, refresh-token rotation, rate limiting and deployment hardening remain future improvements. No public live deployment is listed.",
     url: "https://github.com/kirubanandhan016/taskflow-api"
   }
 };
@@ -165,12 +182,12 @@ async function loadGitHubProfile() {
     });
     if (!response.ok) throw new Error("GitHub repositories API unavailable");
     const repositories = await response.json();
-    const featuredNames = ["inventoryx-fastapi", "job-portal-api", "taskflow-api", "ecommerce-sql-project"];
+    const featuredNames = ["inventoryx-fastapi", "employee-management-system", "job-portal-api", "taskflow-api"];
     const descriptions = {
       "inventoryx-fastapi": "Inventory and order management API",
+      "employee-management-system": "Full-stack employee management system",
       "job-portal-api": "Role-based recruitment backend",
-      "taskflow-api": "JWT-protected task API",
-      "ecommerce-sql-project": "Relational data modelling and analytics"
+      "taskflow-api": "JWT-protected task API"
     };
     const container = document.getElementById("repoList");
     if (!container) return;
